@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+AU+QLD:wght@100..400&display=swap');
+body{
+    background-image: url(image.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    color: white;
+    padding-top: 250px;
+    padding-left: 250px;
+    
+}

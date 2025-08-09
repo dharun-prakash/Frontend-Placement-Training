@@ -1,0 +1,29 @@
+.one {
+
+    background-image: url('bg.jpg');
+    background-blend-mode:darken;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    background-color: red;
+    height: 500px;
+    width: 500px;
+    border-radius: 50px;
+    align-items: left;
+}
+
+.two{
+
+    background-image: url('bg.jpg');
+    background-blend-mode:exclusion;
+    border: 1px solid black;
+
+    background:linear-gradient(to right,grey,white), url('bg.jpg');
+        background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 50px;
+    align-items: right;
+
+}

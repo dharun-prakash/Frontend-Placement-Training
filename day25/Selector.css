@@ -1,0 +1,18 @@
+.ironman{
+    background-color: red;
+    color: yellow;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10%;   
+}
+
+.captain{
+    background-color: blue;
+    color: lightblue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

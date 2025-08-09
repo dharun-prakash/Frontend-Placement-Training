@@ -1,0 +1,8 @@
+body{
+    background: linear-gradient(120deg, orange, red);
+}
+h1{
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
