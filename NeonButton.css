@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    
+}
+button{
+     background-color: black;
+     padding: 10px;
+     border-radius: 10px;
+     color: aqua;
+     border-color: aqua;
+     box-shadow: 0px 0px 10px 1px #0ff;
+    text-shadow: 0px 0px 1px  aqua;
+     font-size: bolder;
+     margin-top: 300px;
+}
+button:hover{
+     background-color: aqua;
+     color: black;
+     border-color: aqua;
+}

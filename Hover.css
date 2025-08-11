@@ -1,0 +1,31 @@
+div {
+    background-color: lightblue;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div:hover {
+    background-color: darkblue;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    color: darkblue;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+}
+p:hover {
+    color: lightblue;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
+    font-weight:bolder;
+    
+}
