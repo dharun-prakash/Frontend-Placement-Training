@@ -1,0 +1,117 @@
+body{
+    background-color: red;
+}
+
+.card1{
+    width: 400px;
+    height: 220px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 50px; 
+    top: 30%;
+    left: 3%;
+    z-index: 1;
+}
+.image1{
+    width: 380px;
+    height:170px;
+    border-radius: 10px;
+    position: relative; 
+    left: 2%;
+    bottom: 20%;
+    z-index: 2;
+}
+
+.title1{
+    position: relative;
+    top: 77%;
+    left: 40%;
+    font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: red;
+}
+
+.card2{
+    width: 380px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: absolute; 
+        margin-left: 50px; 
+    top: 16%;
+    left: 32%;
+    overflow:inherit
+}
+.p1{
+    position: relative;
+    top: 30%;
+    left: 11%;
+    width: 80%;
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+
+}
+.image2{
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative; 
+    bottom: 60%;
+    right: 8%;
+}
+.title2{
+    position: relative;
+    top: 25%;
+    left: 40%;
+    font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+}
+
+.button1{
+    position: relative;
+    top: 1%;
+    left: 37%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 11px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.card3{
+    width: 400px;
+    height: 220px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: absolute; 
+        margin-left: 50px; 
+    top: 30%;
+    left: 60%;
+}
+
+.image3{
+    width: 380px;
+    height:170px;
+    border-radius: 10px;
+    position: relative; 
+    left: 2%;
+    bottom: 23%;
+    z-index: 2;
+}
+
+.title3{
+    position: relative;
+    top: 75%;
+    left: 40%;
+    font-size: 24px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: red;
+}

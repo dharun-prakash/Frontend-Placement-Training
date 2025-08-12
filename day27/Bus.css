@@ -1,0 +1,79 @@
+.bus{
+    height: 400px;
+    width: 700px;
+    background-color: #feb42b;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0 0;
+    left: 40%;
+    top: 100px;
+}
+
+.top{
+    height: 100px;
+    width: 750px;
+    background-color: #d8901d;
+    border-radius: 40px;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+}
+
+.bottom{
+    position: absolute;
+    width: 940px;
+    height: 100px;
+    background-color: #d8901d;
+    border-radius: 40px 40px 40px 40px;
+    bottom: -30px;
+    right: -30px;
+}
+
+.front{
+    position: absolute;
+    width: 700px;
+    height: 180px;
+    background-color: #feb42b;
+    border-radius: 40px 10px 0 0;
+    top: 220px;
+    right: 25%;
+}
+.wheel1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    bottom: -100px;
+}
+
+.wheel2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    bottom: -100px;
+    left: 500px;
+}
+
+.light{
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    background-color: #ededed;
+    border-radius: 50px 100px 100px 50px;
+    top: 250px;
+    right: 816px;
+}
+
+.window1{
+    position: absolute;
+    width: 120px;
+    height: 140px;
+    background-color: #ededed;
+    border-radius: 20px 20px 0 0;
+    top: 85px;
+    right: 550px;
+}
