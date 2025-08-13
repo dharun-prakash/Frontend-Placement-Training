@@ -1,0 +1,38 @@
+.a{
+    height:100px;
+    width: 100px;
+    background-color: green;
+    display: inline-block;
+
+}
+
+.b{
+    height:100px;
+    width: 100px;
+    background-color: blue;
+     display: inline-block;
+}
+
+.c{
+    height:100px;
+    width: 100px;
+    background-color: lightblue;
+}
+
+.d{
+    height:100px;
+    width: 100px;
+    background-color: yellow;
+}
+
+.e{
+    height:100px;
+    width: 100px;
+    background-color: pink;
+}
+
+.f{
+    height:100px;
+    width: 100px;
+    background-color: orange;
+}

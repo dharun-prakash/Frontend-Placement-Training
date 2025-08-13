@@ -1,0 +1,11 @@
+.a{
+    background-color: bisque;
+    height: 100px;
+    display: block;
+}
+
+.b{
+    background-color: lightblue;
+    height: 100px;
+    display: block;
+}

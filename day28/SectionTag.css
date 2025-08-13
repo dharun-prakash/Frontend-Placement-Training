@@ -1,0 +1,19 @@
+#red div{
+    background-color: red;
+    height: 500px;
+}
+#yellow div{
+    background-color: yellow;
+        height: 500px;
+}
+#blue div{
+    background-color: blue;
+    height: 500px;
+}
+
+.nav{
+    position:fixed;
+    height: 100px;
+    width:100vw;
+    background-color: aliceblue;
+}

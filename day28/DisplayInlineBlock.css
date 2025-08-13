@@ -1,0 +1,13 @@
+.a{
+    background-color: bisque;
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+}
+
+.b{
+    background-color: red;
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+}
