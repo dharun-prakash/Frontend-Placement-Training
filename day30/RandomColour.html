@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+</head>
+
+<style>
+    #bg{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+    }
+
+</style>
+
+<body>
+    <div id="bg">
+
+    </div><br>
+            <button id="but" onclick="myfun()">CLICK</button>
+
+
+<script>
+    var a = document.getElementById("bg");
+    function myfun(){
+        var value =Math.floor( Math.random() *1000000);
+        var hash = "#";
+    a.style.backgroundColor= hash + value;
+    }
+
+
+</script>
+    
+</body>
+</html>

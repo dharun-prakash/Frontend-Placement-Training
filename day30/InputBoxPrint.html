@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Box</title>
+</head>
+<body>
+    <h1 id="hh">--</h1>
+    <input id="in" type="text" placeholder="type">
+    <button id="but" onclick="myfun()">enter</button>
+
+    <script>
+        var a = document.getElementById("in")
+        var c = document.getElementById("hh")
+        function myfun(){
+            var print = a.value;
+            c.innerText=print;
+
+        }
+    </script>
+    
+</body>
+</html>

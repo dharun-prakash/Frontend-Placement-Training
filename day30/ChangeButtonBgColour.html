@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Button Colour</title>
+</head>
+<style>
+    #bg{
+        height: 100px;
+        width: 250px;
+        background-color: red;
+
+        
+    }
+    #text{
+        color: yellow;
+    }
+    #but{
+        margin-top: 10px;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        color: yellow;
+    }
+
+</style>
+<body>
+    <div id="bg">
+        <h1 id="text">
+            POWERHOUSE
+        </h1>
+    </div>
+    <button id="but" onclick="myfun()">
+       <h1> Click</h1>
+    </button>
+    <script>
+        var a = document.getElementById("text")
+        var c = document.getElementById("bg")
+        var b = document.getElementById("but")
+        function myfun(){
+            if( a.style.color=="yellow"){
+            a.style.color="red";
+            c.style.backgroundColor="yellow";
+            b.style.color="red";
+            b.style.backgroundColor="yellow";
+            }else{
+            a.style.color="yellow";
+            c.style.backgroundColor="red";
+            b.style.color="yellow";
+            b.style.backgroundColor="red";
+
+            }
+            
+        }
+
+    </script>
+    
+</body>
+</html>

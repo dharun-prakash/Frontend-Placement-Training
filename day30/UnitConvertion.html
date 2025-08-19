@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IUnit Convertion</title>
+</head>
+<body>
+
+    <input id="in" type="text" placeholder="type">
+    <select id="unit">
+        <option value="km">Kilometers</option>
+        <option value="cm">Centimeters</option>
+        <option value="inch">Inches</option>
+        <option value="feet">Feet</option>
+    </select>
+    <button id="but" onclick="myfun()">enter</button>
+        <h1 id="hh"> </h1>
+    <script>
+        var a = document.getElementById("in")
+        var b = document.getElementById("hh")
+        var c = document.getElementById("unit")
+        console.log(c.value);
+        function myfun() {
+            var add1 = Number(a.value) ;
+            var print = 0;
+            if(c.value == "km"){
+                print = add1 /1000;
+            }else if(c.value == "cm"){
+                print = add1 *100;
+            }else if(c.value == "inch"){
+                 print = add1 *39.3701;
+            }else if(c.value == "feet"){
+                  print = add1 *3.28084;
+            }
+
+
+            b.innerText = print;
+        }
+    </script>
+    
+</body>
+</html>

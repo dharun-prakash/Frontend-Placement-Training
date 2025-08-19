@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Random Colour</title>
+</head>
+
+<style>
+    #bg{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+    }
+    #but{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 280px;
+        margin-left: 700px;
+    }
+
+</style>
+
+<body id="bg">
+<br>
+            <button id="but" onclick="myfun()">CLICK</button>
+
+
+<script>
+    var a = document.getElementById("bg");
+    function myfun(){
+        var clr = ['red','green','yellow','blue','pink']
+        var ran = Math.random()
+        var flr = Math.floor(ran*clr.length)
+    a.style.backgroundColor=clr[flr];
+    }
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+</style>
+<body>
+    <div>
+        <input id="user" type="text" placeholder="username">
+        <input id="pass" type="password" placeholder="password">
+        <h1 id="text"></h1>
+        <button onclick="signin()">Sign in</button>
+        <button onclick="signup()">Sign up</button>
+    </div>
+    <script>
+        var user = document.getElementById("user")
+        var pass = document.getElementById("pass")
+        var text = document.getElementById("text")
+        var arr = [{"user":"dharun","pass":"100"}];
+        console.log(arr[0].user);
+        function signin(){
+            let found = false;
+            for(let i = 0; i < arr.length; i++){
+                if(arr[i].user === user.value){
+                    found = true;
+                    if(arr[i].pass === pass.value){
+                        text.innerText = "WELCOME";
+                    } else {
+                        alert("password wrong");
+                    }
+                    return;
+                }
+            }
+            if(!found){
+                alert("username wrong");
+            }
+        }
+
+        function signup(){
+            var size = arr.length + 1;
+            var temp_user = user.value;
+            var temp_pass = pass.value;
+            var temp = {"user":temp_user,"pass":temp_pass};
+            arr[size-1] = temp;
+            console.log(arr)
+            alert(temp_user)
+
+        }
+    </script>
+</body>
+</html>

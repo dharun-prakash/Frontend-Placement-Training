@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change height</title>
+</head>
+<style>
+    #ad{
+        height: 550px;
+        width: 550px;
+        background-color: red;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+    #text{
+        font-size: 100px;
+    }
+    
+</style>
+<body>
+    <div id="ad"><h1 id="text">DOM</h1></div>
+
+    <script>
+        var a = document.getElementById("ad");
+        var b = document.getElementById("text");
+        a.style.height="600px";
+        a.style.width="600px";
+        a.style.backgroundColor="yellow";
+        a.style.color="black"
+        b.innerText="BOM"
+
+    </script>
+    
+</body>
+</html>
