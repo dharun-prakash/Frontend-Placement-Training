@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Checker</title>
+</head>
+<body>
+    <div id="di">
+        <h1 id="chance">5 Chance</h1>
+        <input id="inp" type="number">
+        <button id="but" onclick="fun()">Check</button>
+        <h1 id="point"> 5 Point</h1>
+
+
+    </div>
+    <script>
+        var i = 5;
+        var j = 5;
+        var random = Math.floor(Math.random() * 10);
+        var a = document.getElementById("inp");
+        var b = document.getElementById("point");
+        var chance = document.getElementById("chance");
+
+        function fun() {
+            var temp = Number(a.value);
+            if (temp === random) {
+                i = i + 5;
+                b.innerText = i + " Point";
+                alert("Superrrrr " + random);
+                random = Math.floor(Math.random() * 10);
+                console.log(random);
+            } else {
+                i = i - 1;
+                j = j - 1;
+                b.innerText = i + " Point";
+                chance.innerText = j + " Chance";
+                if (i <= 0) {
+                    alert("No chance" + random);                }
+            }
+        }
+        console.log(b.innerText);
+        console.log(random);
+    </script>
+    
+</body>
+</html>

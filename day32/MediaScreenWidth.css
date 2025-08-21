@@ -1,0 +1,10 @@
+@media screen and (max-width:900px) {
+    h1{
+        color: red;
+    }
+}
+@media screen and (max-width:300px) {
+    h1{
+        color: blue;
+    }
+}

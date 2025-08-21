@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        #container {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .box {
+            border-radius: 10px;
+            width: 220px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+        .box img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="fun('rock')">rock</button>
+        <button onclick="fun('scissor')">scissors</button>
+        <button onclick="fun('paper')">paper</button>
+    </div>
+    <div id="container">
+        <div class="box">
+            <div>User</div>
+            <img id="userImg">
+        </div>
+        <div class="box">
+            <div>Computer</div>
+            <img id="computerImg">
+        </div>
+    </div>
+    <div id="result"></div>
+    <script>
+        var arr = ["rock", "paper", "scissor"];
+        function image(choice) {
+            if (choice === "rock") return "rock.png";
+            if (choice === "paper") return "paper.png";
+            if (choice === "scissor") return "scissors.png";
+            return "";
+        }
+        function fun(user) {
+            var com = arr[Math.floor(Math.random() * arr.length)];
+            document.getElementById("userImg").src = image(user);
+            document.getElementById("computerImg").src = image(com);
+
+            var result = "";
+            if (user === com) {
+                result = "Draw";
+            } else if (
+                (user === "rock" && com === "scissor") ||
+                (user === "paper" && com === "rock") ||
+                (user === "scissor" && com === "paper")
+            ) {
+                result = "Naagaathaa !!!";
+            } else {
+                result = "Poccchee !!!";
+            }
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

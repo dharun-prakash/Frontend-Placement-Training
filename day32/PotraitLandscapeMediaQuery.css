@@ -1,0 +1,17 @@
+div{
+    border: 1px groove black;
+    height: 500px;
+    width:500px;
+}
+@media print {
+    div{
+        border-color: red;
+    }
+}
+
+@media print and (orientation: landscape) {
+    div{
+        border-radius: 50%;
+        border-color: blue;
+    }
+}
