@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp" onkeyup="hlo()">
+    <h1 id="show"></h1>
+    <script>
+        
+
+        function hlo(){
+            var a = document.getElementById("inp");
+            var b = document.getElementById("show");
+          console.log(a.innerText)
+            b.innerText = a.value;
+            console.log(b.innerText)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp" onchange="hlo()">
+
+    <div id="body"></div>
+
+    <script>
+        var a = document.getElementById('body');
+        var b = document.getElementById('inp')
+        var i = 1;
+        function hlo() {
+            
+            a.innerHTML +="<h1 id="+i+" onclick=del("+i+")>"+b.value+"</h1>";
+            i+=1; 
+           
+        }
+        function del(id){
+             var c = document.getElementById(id);
+             c.textContent=""
+
+        }
+    </script> 
+</body>
+</html>

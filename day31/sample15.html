@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 200px;
+        height:200px;
+        position: absolute;
+    }
+</style>
+<body>
+    <img src="download.webp" id="btn">
+    <script>
+        var a=document.getElementById("btn")
+        a.addEventListener('mouseover',
+            function(){
+                var x=window.innerWidth-a.offsetWidth
+                var y=window.innerHeight-a.offsetHeight
+                rx=Math.random()*x
+                ry=Math.random()*y
+                 a.style.left=rx+"px";
+                a.style.top=ry+"px";
+            }
+        )
+        a.addEventListener('click',
+            function(){
+                alert("you are caught me")
+            }
+        )
+    </script>
+</body>
+</html>
